@@ -1,20 +1,18 @@
 {
-  "name": "amplifyapp",
+  "name": "baby-speaks",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@aws-amplify/ui-react": "^0.2.33",
     "@testing-library/jest-dom": "^5.11.8",
-    "@testing-library/react": "^11.2.2",
+    "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
-    "aws-amplify": "^3.3.13",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "HTTPS=true SSL_CRT_FILE=./.cert/cert.pem SSL_KEY_FILE=./.cert/key.pem react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
