@@ -1,0 +1,13 @@
+type Child @model {
+  id: ID!
+  name: String!
+  parents: [String!]
+  words: [ChildWord] @connection(keyName: "byChild", fields: ["id"])
+}
+
+type ChildWord @model @key(name: "byChild", fields: ["childID"]) {
+  id: ID!
+  word: String!
+  date: AWSDateTime!
+  childID: ID!
+}
